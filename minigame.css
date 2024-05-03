@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  margin: 20px;
+  text-align: center;
+}
+
+#main, #quiz, #scoreContainer {
+  font-size: 1.5em; /* 设置字体大小为 1.5 倍 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#question {
+  font-size: 1.7em;
+  font-weight: bold;
+  display: inline-block; /* 设置为行内块元素 */
+  position: relative; /* 设置相对定位 */
+}
+
+
+
+
+
+
+h1 {
+  margin-bottom: 20px;
+}
+
+#options {
+  margin-top: 20px;
+}
+
+#submitBtn, #restartBtn {
+  background-color: lightblue;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#submitBtn:hover, #restartBtn:hover {
+  background-color: #555;
+  color: white;
+}
+
+.scoreAnimation {
+  animation: scoreAnimation 1s;
+}
+
+@keyframes scoreAnimation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.correct .emoji {
+  animation: zoomIn 0.5s ease-in-out;
+}
+
+.incorrect .emoji {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes zoomIn {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.5); }
+  100% { transform: scale(1); }
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-10px); }
+  40% { transform: translateX(10px); }
+  60% { transform: translateX(-10px); }
+  80% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}
