@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Li Fei Fei</title>
+        <style>
+            *       {box-sizing: border-box;
+                    }
+            body    {background-color: lightgoldenrodyellow;
+                    align-items: center;
+                    }
+            header  {background-color: darkgray;
+                    padding: 30px;
+                    text-align: center;
+                    font-size: 35px;
+                    color: white;
+                    }
+            nav     {float: left;
+                    width: 30%;
+                    height: 500px;
+                    background: #ccc;
+                    padding: 20px;
+                    }
+            nav ul  {list-style-type: none;
+                    padding: 0;
+                    }
+            section::after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                    }
+            footer  {
+                    background-color: #777;
+                    padding: 10px;
+                    text-align: center;
+                    color: white;
+                    }
+            article {float: left;
+                    text-align: center;
+                    padding: 20px;
+                    width: 70%;
+                    background-color: #f1f1f1;
+                    }
+            @media (max-width: 600px)
+                    {nav, article {
+                        width: 100%;
+                        height: auto;
+                    }
+                    }
+            p       {color: black;
+                    text-align: center;
+                    font-family: 'Times New Roman', Times, serif;
+                    }
+            iframe  {display: block;
+                    
+                    }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Li Fei-Fei</h1>
+        </header>
+
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#">Biography</a></li>
+                    <li><a href="#">TED Talk</a></li>
+                </ul>
+            </nav>
+        
+        <article>
+            <h1>Li Fei-Fei TED Talk</h1>
+            <p>This is Li Fei-Fei.</p>
+        <div class="container">
+        <iframe width="935" height="526" src="https://www.youtube.com/embed/40riCqvRoMs" 
+        title="How we teach computers to understand pictures | Fei Fei Li" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen></iframe>
+        </div>
+        </article>
+        </section>
+
+        <footer>
+            <p>Footer</p>
+        </footer>
+    </body>
+</html>

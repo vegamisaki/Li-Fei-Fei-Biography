@@ -1,0 +1,18 @@
+<html>
+    <div>
+        <p>請按下試試看按鈕顯示對話框</p>
+        <button onclick="myConfirm()">試試看</button>
+        <p id="demotext"></p>
+        <script>
+        function myConfirm() {
+        let text;
+        if (confirm('請按下按鈕') == true) {
+        text = '你按下了確定按鈕’;
+        } else {
+        text = '你按下了取消按鈕’;
+        }
+        document.getElementById('demotext').innerHTML = text;
+        }
+        </script>
+        </div>        
+</html>
