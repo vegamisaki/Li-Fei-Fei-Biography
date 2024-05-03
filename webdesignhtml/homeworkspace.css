@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'im-fell-english', 'Times New Roman', Times, 'Inter', serif;
+    margin: 0;
+}
+#accordion {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.white-text {
+    color: white;
+}
+#accordion input {
+    display: none;
+}
+
+#accordion label {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#accordion label:hover {
+    background-color: #b4b6cb66;
+}
+
+#accordion .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-image: linear-gradient(to right, #004AAD , rgba(0, 0, 0, 0.349));
+    margin-right: 700px;
+    margin-left: 20px;
+}
+
+#accordion input:checked ~ label {
+    background-color: #210063;
+}
+
+#accordion input:checked ~ .content {
+    max-height: 200px; /* adjust the height as needed */
+}
+
+#accordion input:not(:checked) ~ .content {
+    max-height: 0;
+}
