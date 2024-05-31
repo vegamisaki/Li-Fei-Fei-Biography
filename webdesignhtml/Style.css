@@ -227,10 +227,13 @@ header {
 .content {
     max-width: 700px;
     color: #fff;
+    z-index: 1;
     }
 
 .content h1 {
+    position: relative;
     font-size: 1.5cm;
+    z-index: 1;
     }
 
 .content h1 span {
@@ -238,9 +241,11 @@ header {
     }
 
 .content p {
+    position: relative;
     font-size: 0.5cm;
     line-height: 0.8cm;
     padding: 10px 0 40px 0;
+    z-index: 1;
     }
 
 .content2 {
@@ -305,6 +310,10 @@ header {
     background: #fff;
 }
 
+.closebtn {
+    color: #fff;
+}
+
 .social-icons {
     position: absolute;
     bottom: 50px;
@@ -332,3 +341,32 @@ header {
     color: #fff;
 }
 
+.achieve {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('image\ \(23\).png');
+    background-color: #111;
+    background-size: contain;
+    background-origin: right;
+    background-position: right center;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+    transform: translateX(0%);
+}
+
+.achieve::after {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #111, transparent);
+}
+
+.youtube {
+    align-content: center;
+    background-color: #111;
+}
